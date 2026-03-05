@@ -1,20 +1,20 @@
 <nav class="navbar">
     <div class="nav-brand">ReviewMaster</div>
     <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Categories</a>
-        <a href="#">About Us</a>
-    </div>
+    <a routerLink="/customer/home">Home</a>
+    <a routerLink="/customer/product">Products</a>
+    <a routerLink="/customer/categories">Categories</a>
+    <a routerLink="/customer/about">About Us</a>
+</div>
     <div class="nav-actions">
-        <button class="btn-login">Log In</button>
-        <button class="btn-signup">Sign Up</button>
+
+        <button class="btn-signup">Logout</button>
     </div>
 </nav>
 
-<!-- <main class="main-content">
+<main class="main-content">
     <router-outlet></router-outlet>
-</main> -->
+</main>
 
 <footer class="footer">
     <div class="footer-grid">
@@ -27,10 +27,10 @@
         <div class="footer-section">
             <h3>Quick Links</h3>
             <ul class="footer-links">
-                <li><a href="#">Browse Products</a></li>
-                <li><a href="#">Top Rated</a></li>
-                <li><a href="#">Recent Reviews</a></li>
-                <li><a href="#">Write a Review</a></li>
+                <li><a routerlink="/customer/home">Browse Products</a></li>
+                <li><a routerlink="/customer/home">Top Rated</a></li>
+                <li><a routerlink="/customer/home">Recent Reviews</a></li>
+                <li><a routerlink="/customer/home">Write a Review</a></li>
             </ul>
         </div>
 

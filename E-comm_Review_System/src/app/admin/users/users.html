@@ -1,0 +1,169 @@
+<div class="users-page-container">
+    <!-- Header -->
+    <header class="page-header">
+        <div class="page-title">
+            <h1>User Management</h1>
+            <p>View, manage, and moderate all users registered in the system.</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn-primary">
+                <span>+</span> Add New User
+            </button>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+        <div class="search-input-group">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search by name, email or role...">
+        </div>
+        <div class="filter-controls">
+            <select class="select-control">
+                <option>All Roles</option>
+                <option>Admin</option>
+                <option>Moderator</option>
+                <option>Customer</option>
+            </select>
+            <select class="select-control">
+                <option>Status: All</option>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Users Table -->
+    <div class="users-table-card">
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Joined Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User 1 -->
+                <tr>
+                    <td>
+                        <div class="user-cell">
+                            <div class="user-avatar">JD</div>
+                            <div class="user-info-text">
+                                <span class="user-name">John Doe</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="user-email">john.doe@example.com</span></td>
+                    <td><span class="role-badge role-admin">Admin</span></td>
+                    <td>
+                        <div class="status-indicator">
+                            <span class="dot dot-active"></span>
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>Oct 15, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- User 2 -->
+                <tr>
+                    <td>
+                        <div class="user-cell">
+                            <div class="user-avatar" style="background: #fbbf24;">AS</div>
+                            <div class="user-info-text">
+                                <span class="user-name">Alice Smith</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="user-email">alice.smith@example.com</span></td>
+                    <td><span class="role-badge role-moderator">Moderator</span></td>
+                    <td>
+                        <div class="status-indicator">
+                            <span class="dot dot-active"></span>
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>Oct 18, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- User 3 -->
+                <tr>
+                    <td>
+                        <div class="user-cell">
+                            <div class="user-avatar" style="background: #10b981;">MK</div>
+                            <div class="user-info-text">
+                                <span class="user-name">Mike Karan</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="user-email">mike.k@example.com</span></td>
+                    <td><span class="role-badge role-customer">Customer</span></td>
+                    <td>
+                        <div class="status-indicator">
+                            <span class="dot dot-active"></span>
+                            <span>Active</span>
+                        </div>
+                    </td>
+                    <td>Oct 20, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- User 4 -->
+                <tr>
+                    <td>
+                        <div class="user-cell">
+                            <div class="user-avatar" style="background: #64748b;">RL</div>
+                            <div class="user-info-text">
+                                <span class="user-name">Robert Lee</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="user-email">robert.lee@example.com</span></td>
+                    <td><span class="role-badge role-customer">Customer</span></td>
+                    <td>
+                        <div class="status-indicator">
+                            <span class="dot dot-inactive"></span>
+                            <span>Inactive</span>
+                        </div>
+                    </td>
+                    <td>Oct 22, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="table-footer">
+            <span>Showing 4 of 450 users</span>
+            <div class="pagination-group">
+                <div class="page-link active">1</div>
+                <div class="page-link">2</div>
+                <div class="page-link">3</div>
+                <div class="page-link">...</div>
+                <div class="page-link">45</div>
+            </div>
+        </div>
+    </div>
+</div>

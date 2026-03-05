@@ -1,1 +1,32 @@
-<p>admin-layout works!</p>
+<nav class="admin-navbar">
+    <div class="admin-brand">
+        ReviewMaster <span class="brand-badge">Admin</span>
+    </div>
+
+    <div class="admin-nav-links">
+        <a href="/admin/dashboard">Dashboard</a>
+        <a href="/admin/products">Products</a>
+        <a href="/admin/reviews">Reviews</a>
+        <a href="/admin/users">Users</a>
+        
+    </div>
+
+    <div class="admin-profile">
+        <div class="admin-avatar">AD</div>
+        <button class="btn-logout">Logout</button>
+    </div>
+</nav>
+
+<main class="admin-main">
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="admin-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 ReviewMaster Management System. All rights reserved.</p>
+        <div class="system-status">
+            <div class="status-indicator"></div>
+            <span>System Online: Node-01</span>
+        </div>
+    </div>
+</footer>

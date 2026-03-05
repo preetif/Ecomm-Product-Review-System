@@ -4,6 +4,11 @@ import { Home } from './customer/home/home';
 import { Product } from './customer/product/product';
 import { Categories } from './customer/categories/categories';
 import { About } from './customer/about/about';
+import { AdminLayout } from './layout/admin-layout/admin-layout';
+import { Users } from './admin/users/users';
+import { Reviews } from './admin/reviews/reviews';
+import { Products } from './admin/products/products';
+import { Dashboard } from './admin/dashboard/dashboard';
 
 export const routes: Routes = [
   {
@@ -23,6 +28,22 @@ export const routes: Routes = [
         redirectTo: 'home',
         pathMatch: 'full'
       }
+
+
     ]
+    
+  },
+
+  {
+    path: 'admin',
+    component: AdminLayout,
+    children: [
+      { path: 'dashboard', component: Dashboard },
+      { path: 'products', component: Products },
+      { path: 'reviews', component: Reviews },
+      { path: 'users', component: Users },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+    ]
+
   }
 ];

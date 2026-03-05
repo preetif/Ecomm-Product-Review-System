@@ -1,0 +1,166 @@
+<div class="products-page-container">
+    <!-- Header -->
+    <header class="page-header">
+        <div class="page-title">
+            <h1>Product Management</h1>
+            <p>Manage your inventory, pricing, and view product status at a glance.</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn-primary">
+                <span>+</span> Add New Product
+            </button>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+        <div class="search-input-group">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search by name, SKU or categories...">
+        </div>
+        <div class="filter-controls">
+            <select class="select-control">
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Home & Living</option>
+            </select>
+            <select class="select-control">
+                <option>Status: All</option>
+                <option>In Stock</option>
+                <option>Low Stock</option>
+                <option>Out of Stock</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Products Table -->
+    <div class="products-table-card">
+        <table class="products-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Item 1 -->
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=100"
+                                class="product-img" alt="Product">
+                            <div class="product-info-text">
+                                <span class="product-name">Wireless Headphones X</span>
+                                <span class="product-sku">SKU: WH-1024</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="category-badge">Electronics</span></td>
+                    <td><span class="price-text">$299.00</span></td>
+                    <td><span class="stock-badge stock-in">● In Stock</span></td>
+                    <td>
+                        <div class="rating-box">⭐ 4.8</div>
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Item 2 -->
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=100"
+                                class="product-img" alt="Product">
+                            <div class="product-info-text">
+                                <span class="product-name">Smart Watch Obsidian</span>
+                                <span class="product-sku">SKU: SW-8501</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="category-badge">Electronics</span></td>
+                    <td><span class="price-text">$199.00</span></td>
+                    <td><span class="stock-badge stock-low">● Low Stock</span></td>
+                    <td>
+                        <div class="rating-box">⭐ 4.2</div>
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Item 3 -->
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=100"
+                                class="product-img" alt="Product">
+                            <div class="product-info-text">
+                                <span class="product-name">Running Shoes 2.0</span>
+                                <span class="product-sku">SKU: RS-4309</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="category-badge">Sports</span></td>
+                    <td><span class="price-text">$89.00</span></td>
+                    <td><span class="stock-badge stock-in">● In Stock</span></td>
+                    <td>
+                        <div class="rating-box">⭐ 4.9</div>
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Item 4 -->
+                <tr>
+                    <td>
+                        <div class="product-cell">
+                            <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&q=80&w=100"
+                                class="product-img" alt="Product">
+                            <div class="product-info-text">
+                                <span class="product-name">Leather Messenger Bag</span>
+                                <span class="product-sku">SKU: LB-3204</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="category-badge">Fashion</span></td>
+                    <td><span class="price-text">$120.00</span></td>
+                    <td><span class="stock-badge stock-out">● Out of Stock</span></td>
+                    <td>
+                        <div class="rating-box">⭐ 4.5</div>
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-edit" title="Edit">✏️</button>
+                            <button class="btn-icon btn-delete" title="Delete">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="table-footer">
+            <span>Showing 4 of 120 products</span>
+            <div class="pagination-group">
+                <div class="page-link active">1</div>
+                <div class="page-link">2</div>
+                <div class="page-link">3</div>
+                <div class="page-link">...</div>
+                <div class="page-link">15</div>
+            </div>
+        </div>
+    </div>
+</div>

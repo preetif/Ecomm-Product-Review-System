@@ -1,0 +1,167 @@
+<div class="reviews-page-container">
+    <!-- Header -->
+    <header class="page-header">
+        <div class="page-title">
+            <h1>Review Moderation</h1>
+            <p>Monitor and manage customer feedback across all products.</p>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="filter-bar">
+        <div class="search-input-group">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search by product, user or keyword...">
+        </div>
+        <div class="filter-controls">
+            <select class="select-control">
+                <option>All Ratings</option>
+                <option>5 Stars</option>
+                <option>4 Stars</option>
+                <option>3 Stars</option>
+                <option>2 Stars</option>
+                <option>1 Star</option>
+            </select>
+            <select class="select-control">
+                <option>Status: All</option>
+                <option>Approved</option>
+                <option>Pending</option>
+                <option>Flagged</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Reviews Table -->
+    <div class="reviews-table-card">
+        <table class="reviews-table">
+            <thead>
+                <tr>
+                    <th>Product & User</th>
+                    <th>Rating</th>
+                    <th>Review Content</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Review 1 -->
+                <tr>
+                    <td>
+                        <div class="product-review-info">
+                            <span class="product-name">Wireless Headphones X</span>
+                            <span class="user-name">by John Doe</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                    </td>
+                    <td>
+                        <div class="review-text-snippet"
+                            title="The sound quality is incredible for the price. Best purchase this year!">
+                            "The sound quality is incredible for the price. Best purchase this year!"
+                        </div>
+                    </td>
+                    <td><span class="status-badge status-approved">Approved</span></td>
+                    <td>Oct 20, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-view" title="View Details">👁️</button>
+                            <button class="btn-icon btn-reject" title="Reject/Remove">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Review 2 -->
+                <tr>
+                    <td>
+                        <div class="product-review-info">
+                            <span class="product-name">Smart Watch Obsidian</span>
+                            <span class="user-name">by Alice Smith</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating-stars">⭐⭐⭐⭐☆</div>
+                    </td>
+                    <td>
+                        <div class="review-text-snippet"
+                            title="Everything is great but the battery life could be better.">
+                            "Everything is great but the battery life could be better."
+                        </div>
+                    </td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td>Oct 22, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-approve" title="Approve">✅</button>
+                            <button class="btn-icon btn-reject" title="Reject/Remove">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Review 3 -->
+                <tr>
+                    <td>
+                        <div class="product-review-info">
+                            <span class="product-name">Running Shoes 2.0</span>
+                            <span class="user-name">by Mike Karan</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating-stars">⭐☆☆☆☆</div>
+                    </td>
+                    <td>
+                        <div class="review-text-snippet"
+                            title="Soles started peeling off after just one week of use. Very disappointed.">
+                            "Soles started peeling off after just one week of use. Very disappointed."
+                        </div>
+                    </td>
+                    <td><span class="status-badge status-flagged">Flagged</span></td>
+                    <td>Oct 24, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-view" title="Review Dispute">👁️</button>
+                            <button class="btn-icon btn-reject" title="Delete Review">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Review 4 -->
+                <tr>
+                    <td>
+                        <div class="product-review-info">
+                            <span class="product-name">Leather Messenger Bag</span>
+                            <span class="user-name">by Robert Lee</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                    </td>
+                    <td>
+                        <div class="review-text-snippet"
+                            title="Top tier quality leather. Fits my 15-inch laptop perfectly.">
+                            "Top tier quality leather. Fits my 15-inch laptop perfectly."
+                        </div>
+                    </td>
+                    <td><span class="status-badge status-approved">Approved</span></td>
+                    <td>Oct 25, 2023</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-icon btn-view" title="View Details">👁️</button>
+                            <button class="btn-icon btn-reject" title="Delete Review">🗑️</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="table-footer">
+            <span>Showing 4 of 1,240 reviews</span>
+            <div class="pagination-group">
+                <div class="page-link active">1</div>
+                <div class="page-link">2</div>
+                <div class="page-link">3</div>
+                <div class="page-link">...</div>
+                <div class="page-link">124</div>
+            </div>
+        </div>
+    </div>
+</div>
